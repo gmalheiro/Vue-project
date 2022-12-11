@@ -79,6 +79,15 @@ onMounted(() => {
 				 </div>
 			</div>
 		</div>
+
+		<div class="myanime">
+			<h2> My Anime</h2>
+
+			<div v-for="anime in my_anime_asc" class="anime">
+				<img :src="anime.image"/>
+				<h3>{{anime.title}}</h3>
+			</div>
+		</div>
 	</main>
 </template>
 
